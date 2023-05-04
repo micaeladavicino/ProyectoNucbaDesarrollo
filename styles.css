@@ -1,0 +1,160 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+   background-color: white;
+}
+
+.nav-bar{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+
+
+.header{
+    background: #055091;
+    
+}
+
+.narvar i{
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+@media(max-width:576px){
+    .nav-bar ul{
+        background-color: #055091;
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+}
+
+.nav-bar i{
+    display: block;
+}
+
+#toggle-menu:checked ~ .navbar-list {
+    display: flex;
+}
+
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: black;
+width: 100%;
+}
+
+.logo-2{
+    width: 8%;
+    
+    
+}
+.nav-bar ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 10px 20px;
+    
+}
+
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar ul li a:hover{
+    color:red;
+    transition: .1s;
+}
+
+button{
+    border: none;
+    background: #0dc25c;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .1s;
+}
+
+button:hover{
+    transform: scale(1.3);
+    cursor:pointer;
+}
+
+#info{
+padding: 10px 0;
+max-width: 1200px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 80px;}
+
+.info-cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    gap: 30px;
+}
+
+    .info-card {
+        width: 300px;
+        height: 290px;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: var(--secondary);
+        border-radius: 10px;
+        gap: 20px;
+      }
+
+      #info h2 {
+        font-size: 32px;
+        font-weight: 800;}
+
+        img{
+            width: 50%;
+        }
+
+       
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #055091;
+        }
+
+     
